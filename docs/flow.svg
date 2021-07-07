@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="167.41743mm"
+   height="73.167274mm"
+   viewBox="0 0 167.41743 73.167274"
+   version="1.1"
+   id="svg47"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="flow.svg"
+   inkscape:export-filename="/home/fred/Nextcloud/script_encrypted_backup/forgit/media/flow.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview49"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.675609"
+     inkscape:cx="329.73086"
+     inkscape:cy="119.65799"
+     inkscape:window-width="2560"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs44">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path104869" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.75981253,-51.279728)">
+    <text
+       xml:space="preserve"
+       style="font-size:6.70277px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="38.876816"
+       y="81.920372"
+       id="text1230"><tspan
+         sodipodi:role="line"
+         id="tspan1228"
+         style="stroke-width:0.264583"
+         x="38.876816"
+         y="81.920372" /></text>
+    <rect
+       style="fill:#86c1ff;fill-opacity:0.57974511;stroke:none;stroke-width:0.12951"
+       id="rect65922"
+       width="64.164688"
+       height="71.818108"
+       x="0.75981253"
+       y="51.279728"
+       rx="0.70060349"
+       ry="1.3636608" />
+    <g
+       id="g80641"
+       transform="translate(-4.2333335,-8.4666669)">
+      <rect
+         style="fill:#f5f5f5;stroke:none;stroke-width:0.227878"
+         id="rect73"
+         width="41.181492"
+         height="16.115808"
+         x="14.732828"
+         y="71.499016"
+         rx="2"
+         ry="2" />
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;shape-inside:url(#rect73);stroke:none;stroke-width:0.264583"
+         x="52.015717"
+         y="75.007149"
+         id="text4974"><tspan
+           x="31.287828"
+           y="77.116309"
+           id="tspan97741"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan97739">S1
+</tspan></tspan><tspan
+           x="19.011818"
+           y="85.053809"
+           id="tspan97747"><tspan
+             style="font-size:3.88056px"
+             id="tspan97743">nextcloud </tspan><tspan
+             style="font-size:3.88056px;text-align:center;text-anchor:middle"
+             id="tspan97745">server</tspan></tspan></text>
+    </g>
+    <g
+       id="g80636"
+       transform="translate(-77.164827,28.815807)">
+      <rect
+         style="fill:#f5f5f5;stroke:none;stroke-width:0.227878"
+         id="rect73-0"
+         width="41.181492"
+         height="16.115808"
+         x="87.664322"
+         y="71.499016"
+         rx="2"
+         ry="2" />
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;shape-inside:url(#rect73-0);stroke:none;stroke-width:0.264583"
+         x="52.015717"
+         y="75.007149"
+         id="text4974-8"><tspan
+           x="104.21947"
+           y="77.116309"
+           id="tspan97751">S2<tspan
+   style="font-size:4.23333px;text-align:center;text-anchor:middle"
+   id="tspan97749">
+</tspan></tspan><tspan
+           x="89.345676"
+           y="85.053809"
+           id="tspan97755"><tspan
+             style="font-size:3.88056px"
+             id="tspan97753">local backup server</tspan></tspan></text>
+    </g>
+    <rect
+       style="fill:#85c1ff;fill-opacity:0.58039218;stroke:none;stroke-width:0.083796"
+       id="rect65922-6"
+       width="54.399532"
+       height="35.463017"
+       x="113.77772"
+       y="87.634819"
+       rx="0.59397936"
+       ry="0.67336118" />
+    <rect
+       style="fill:#f5f5f5;stroke:none;stroke-width:0.227878"
+       id="rect73-0-8"
+       width="41.181492"
+       height="16.115808"
+       x="120.40041"
+       y="101.40482"
+       rx="2"
+       ry="2" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';white-space:pre;shape-inside:url(#rect73-0-8);stroke:none;stroke-width:0.264583"
+       x="52.015717"
+       y="75.007149"
+       id="text4974-8-5"><tspan
+         x="136.95579"
+         y="107.02256"
+         id="tspan97759">S3<tspan
+   style="font-size:3.88056px;text-align:center;text-anchor:middle"
+   id="tspan97757">
+</tspan></tspan><tspan
+         x="123.50784"
+         y="114.96006"
+         id="tspan97763"><tspan
+           style="font-size:3.88056px;text-align:center;text-anchor:middle"
+           id="tspan97761">encrypted backup</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;white-space:pre;shape-inside:url(#rect65922-6);stroke-width:0.264583;fill:#000000;fill-opacity:1"
+       x="106.78118"
+       y="94.111137"
+       id="text132197"><tspan
+         x="114.78379"
+         y="93.253027"
+         id="tspan97765">Friend's network</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.375288;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 51.686321,109.64745 H 120.05453"
+       id="path145232" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583;fill:#dc6f00;fill-opacity:1"
+       x="88.659302"
+       y="107.25114"
+       id="text146130"><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#dc6f00;fill-opacity:1;stroke-width:0.264583"
+         x="88.659302"
+         y="107.25114"
+         id="tspan154638">(2)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#dc6f00;fill-opacity:1;stroke-width:0.264583"
+         x="88.659302"
+         y="115.18864"
+         id="tspan154642">slower</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#dc6f00;fill-opacity:1;stroke-width:0.264583"
+         x="88.659302"
+         y="123.12614"
+         id="tspan149230">backup</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.70277px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;white-space:pre;shape-inside:url(#rect65922);stroke-width:0.264583;fill:#000000;fill-opacity:1"
+       x="31.308735"
+       y="60.691402"
+       id="text67664"><tspan
+         x="4.3107369"
+         y="57.209678"
+         id="tspan97769"><tspan
+           style="font-size:6.35px"
+           id="tspan97767">My home network</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.262202;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 32.412634,79.166308 0.09455,21.138982"
+       id="path80841"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="24.516369"
+       y="91.221428"
+       id="text121335"><tspan
+         sodipodi:role="line"
+         id="tspan121333"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#dc6f00;fill-opacity:1;stroke-width:0.264583"
+         x="24.516369"
+         y="91.221428">(1)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;text-anchor:middle;stroke-width:0.264583;fill:#dc6f00;fill-opacity:1"
+       x="35.222408"
+       y="87.134865"
+       id="text224788"><tspan
+         sodipodi:role="line"
+         id="tspan224786"
+         style="text-align:start;text-anchor:start;fill:#dc6f00;fill-opacity:1;stroke-width:0.264583"
+         x="35.222408"
+         y="87.134865">fast</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;fill:#dc6f00;fill-opacity:1;stroke-width:0.264583"
+         x="35.222408"
+         y="95.072365"
+         id="tspan224790">backup</tspan></text>
+  </g>
+</svg>

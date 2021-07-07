@@ -44,9 +44,9 @@ mkdir -p $destdirectory/nextcloud_varwwwhtml_backup
 mkdir -p $destdirectory/nextcloud_database_backup
 
 # we are now ready to copy the backup over
-rsync -a -H $(readlink $localbackupdirectory/nextcloud_backup/latest) $destdirectory/nextcloud_backup/.
+./S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_backup/latest) $destdirectory/nextcloud_backup
 echo "Done copying the data"
-rsync -a -H $(readlink $localbackupdirectory/nextcloud_varwwwhtml_backup/latest) $destdirectory/nextcloud_varwwwhtml_backup/.
+./S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_varwwwhtml_backup/latest) $destdirectory/nextcloud_varwwwhtml_backup
 echo "Done copying the html"
 cp $(ls -A $localbackupdirectory/nextcloud_database_backup | tail -n1) $destdirectory/nextcloud_database_backup/.
 echo "Done copying the database dump"

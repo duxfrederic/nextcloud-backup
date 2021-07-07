@@ -18,7 +18,7 @@ rsync -av --delete \
   --link-dest "${LATEST_LINK}" \
   --no-perms --no-owner --no-group \
   --exclude=".cache" \
-  "${REMOTE_COMP}:${BACKUP_PATH}"
+  "${BACKUP_PATH}/"
 
 rm -rf ${LATEST_LINK}
 ln -s ${BACKUP_PATH} ${LATEST_LINK}
