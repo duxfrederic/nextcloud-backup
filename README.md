@@ -34,14 +34,13 @@ At this point the Nextcloud instance can continue operation on `S1`. The second 
 ssh S3 # or prepare this locally and then plug the hard drive in on S3, same story
 cd /your/mass/storage
 # reserve the amount of space that you will need
-dd if=/dev/zero of=fred_distant_backup.img bs=1 count=0 seek=776G
+dd if=/dev/zero of=your_luks_image.img bs=1 count=0 seek=776G
 # create the LUKS volume
-sudo cryptsetup luksFormat fred_distant_backup.img /path/to/yourkey.keyfile
+sudo cryptsetup luksFormat your_luks_image.img /path/to/yourkey.keyfile
 # decrypt it.
-sudo cryptsetup luksOpen fred_distant_backup.img fredNextcloudBackup --key-file /home/fred/nextcloudbackup_bycedric.keyfile
+sudo cryptsetup luksOpen your_luks_image.img yourMapperName --key-file /path/to/yourkey.keyfile
 # format it with ext4
-sudo mkfs.ext4 /dev/mapper/fredNextcloudBackup
-# now, we are ready to mount it remotely and start using the scripts.
+sudo mkfs.ext4 /dev/mapper/yourMapperName
 ```
 
 
