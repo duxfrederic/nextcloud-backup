@@ -10,9 +10,9 @@ sudo -u www-data php $htmlfiles/occ maintenance:mode --on
 echo "Activated maintenance mode"
 
 # backup the data (very long)
-./backup.bash $data/ ${remoteDir}/nextcloud_backup ${remoteComp}
+./S1_backup_single_dir_ssh.bash $data/ ${remoteDir}/nextcloud_backup ${remoteComp}
 # backup the files (m'okay long)
-./backup.bash $htmlfiles/ ${remoteDir}/nextcloud_varwwwhtml_backup ${remoteComp}
+./S1_backup_single_dir_ssh.bash $htmlfiles/ ${remoteDir}/nextcloud_varwwwhtml_backup ${remoteComp}
 # backup the database by dumping to tmp, then scp. 
 # (you can change the /tmp thing if not secure enough for your need)
 databasefilename="nextcloud-sqlbkp_`date +"%Y%m%d"`.bak"
