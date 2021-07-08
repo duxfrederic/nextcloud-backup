@@ -47,9 +47,10 @@ destdirectory="$localmount/$localencrypted"
 # so, mount the distant filesystem here:
 sshfs -o allow_other,default_permissions,IdentityFile=$idfile $distanthost:$distantdir $localmount
 # decrypt the image 
-cryptsetup luksOpen $localmount/$imgfile $localencryptedname --key-file $keyfile
+/sbin/cryptsetup luksOpen $localmount/$imgfile $localencryptedname --key-file $keyfile
 # and mount it locally
 mount /dev/mapper/$localencryptedname $destdirectory
+
 
 mkdir -p $destdirectory/nextcloud_backup
 mkdir -p $destdirectory/nextcloud_varwwwhtml_backup
@@ -72,8 +73,8 @@ sleep 5
 # final step, unmount everything. 
 # close the LUKFS image:
 echo "Unmounting $destdirectory"
-umount $destdirectory
+umount -l $destdirectory
 # disconnect from the sshfs process
-dmsetup remove /dev/mapper/$localencryptedname
+/sbin/dmsetup remove /dev/mapper/$localencryptedname
 echo "Unmounting $localmount"
 umount -l $localmount
