@@ -17,7 +17,6 @@ else
 	rm $SIGNALFILE
 fi
 
-exit
 # distant server info (here relying on .ssh/config)
 distanthost="ryzen"
 # distant directory
