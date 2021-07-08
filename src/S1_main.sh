@@ -17,8 +17,12 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+
 # first step, the backup to a local server.
-./S1_backup_nextcloud.bash $localserver $localserverdirectory $data $htmlfiles 
+$SCRIPT_DIR/S1_backup_nextcloud.bash $localserver $localserverdirectory $data $htmlfiles 
 
 
 # initializing the second step, we ssh into the localserver and create a file signaling

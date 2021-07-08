@@ -55,10 +55,13 @@ mkdir -p $destdirectory/nextcloud_backup
 mkdir -p $destdirectory/nextcloud_varwwwhtml_backup
 mkdir -p $destdirectory/nextcloud_database_backup
 
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 # we are now ready to copy the backup over
-./S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_backup/latest) $destdirectory/nextcloud_backup
+$SCRIPT_DIR/S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_backup/latest) $destdirectory/nextcloud_backup
 echo "Done copying the data"
-./S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_varwwwhtml_backup/latest) $destdirectory/nextcloud_varwwwhtml_backup
+$SCRIPT_DIR/S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_varwwwhtml_backup/latest) $destdirectory/nextcloud_varwwwhtml_backup
 echo "Done copying the html"
 cp $(ls -A $localbackupdirectory/nextcloud_database_backup | tail -n1) $destdirectory/nextcloud_database_backup/.
 echo "Done copying the database dump"
