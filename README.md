@@ -43,7 +43,29 @@ sudo cryptsetup luksOpen your_luks_image.img yourMapperName --key-file /path/to/
 sudo mkfs.ext4 /dev/mapper/yourMapperName
 ```
 
+## Running the scripts
 
+You will need root access on the three servers involved in the backup. `S1` must be able to `SSH` into `S2` and `S2` into `S3`. Get a copy of the scripts on `S1` and on `S2` with 
+
+```bash
+git clone git@github.com:duxfrederic/nextcloud-backup.git
+```
+
+Then, adapt `src/backup.config`  to your situation. On `S1`,  setup a crontab (as root) with e.g.
+
+```crontab
+30 03 * * *  /path/to/S1_main.sh >  /path/to/logs 2>&1
+```
+
+that is run daily at 03:30. With my two Raspberry Pis, low end USB hard drives and ~500 GB Nextcloud instance, this step takes 30 minutes in average. On `S2`:
+
+```crontab
+33 4,5,6 * * *  /path/to/S2_encrypted_backup.sh >  /path/to/logs 2>&1
+```
+
+which tries to start the second part of the backup a few times. (It does so once only if the first part is successful, so you could just run that one every hour). 
+
+> Recall, the first run will be massively slower than the subsequent ones. 
 
 ## Things that could be improved
 
