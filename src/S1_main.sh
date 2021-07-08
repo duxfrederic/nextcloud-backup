@@ -18,7 +18,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # first step, the backup to a local server.
-./backup_nextcloud.bash $localserver $localserverdirectory $data $htmlfiles 
+./S1_backup_nextcloud.bash $localserver $localserverdirectory $data $htmlfiles 
 
 
 # initializing the second step, we ssh into the localserver and create a file signaling
