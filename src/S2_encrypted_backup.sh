@@ -5,6 +5,18 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+
+# checking whether the local backup has completed
+SIGNALFILE="/home/fred/.nextcloudbackup/localBackupDone"
+if [ ! -f "$SIGNALFILE" ]; then 
+	echo "$SIGNALFILE does not exist - nothing to do.
+	exit
+else
+	echo "$SIGNALFILE exists - proceeding with the backup.
+	rm $SIGNALFILE
+fi
+
+
 # distant server info (here relying on .ssh/config)
 distanthost="ryzen"
 # distant directory
