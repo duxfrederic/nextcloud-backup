@@ -51,7 +51,6 @@ sshfs -o allow_other,default_permissions,IdentityFile=$idfile $distanthost:$dist
 # and mount it locally
 mount /dev/mapper/$localencryptedname $destdirectory
 
-
 mkdir -p $destdirectory/nextcloud_backup
 mkdir -p $destdirectory/nextcloud_varwwwhtml_backup
 mkdir -p $destdirectory/nextcloud_database_backup
@@ -64,7 +63,7 @@ $SCRIPT_DIR/S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud
 echo "Done copying the data"
 $SCRIPT_DIR/S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_varwwwhtml_backup/latest) $destdirectory/nextcloud_varwwwhtml_backup
 echo "Done copying the html"
-cp $(ls -A $localbackupdirectory/nextcloud_database_backup | tail -n1) $destdirectory/nextcloud_database_backup/.
+cp $localbackupdirectory/nextcloud_database_backup/$(ls -A $localbackupdirectory/nextcloud_database_backup | tail -n1) $destdirectory/nextcloud_database_backup/.
 echo "Done copying the database dump"
 echo 
 echo "waiting for a few seconds before unmounting"
