@@ -4,10 +4,6 @@ remoteComp=$1
 remoteDir=$2
 data=$3
 htmlfiles=$4
-# globals for the second step of the backup
-distantComp=$5
-distantDir=$6
-decryptionkey=$7
 
 # maintenance mode
 sudo -u www-data php $htmlfiles/occ maintenance:mode --on
