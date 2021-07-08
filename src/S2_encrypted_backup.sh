@@ -6,15 +6,18 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 
-# checking whether the local backup has completed
-SIGNALFILE="/home/fred/.nextcloudbackup/localBackupDone"
-if [ ! -f "$SIGNALFILE" ] 
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+source $SCRIPT_DIR/backup.config
+
+if [ ! -f "$SIGNAL_FILE" ] 
 then 
-	echo "$SIGNALFILE does not exist - nothing to do."
+	echo "$SIGNAL_FILE does not exist - nothing to do."
 	exit
 else
-	echo "$SIGNALFILE exists - proceeding with the backup."
-	rm $SIGNALFILE
+	echo "$SIGNAL_FILE exists - proceeding with the backup."
+	rm $SIGNAL_FILE
 fi
 
 # distant server info (here relying on .ssh/config)
@@ -56,7 +59,6 @@ mkdir -p $destdirectory/nextcloud_varwwwhtml_backup
 mkdir -p $destdirectory/nextcloud_database_backup
 
 
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # we are now ready to copy the backup over
 $SCRIPT_DIR/S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud_backup/latest) $destdirectory/nextcloud_backup
