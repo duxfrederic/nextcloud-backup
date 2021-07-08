@@ -8,7 +8,7 @@ set -o pipefail
 readonly SOURCE_DIR="$1"
 readonly BACKUP_DIR="$2"
 readonly REMOTE_COMP="$3"
-readonly DATETIME="$(date '+%Y-%m-%d_%H-%M-%S')"
+readonly DATETIME="$4"
 readonly BACKUP_PATH="${BACKUP_DIR}/${DATETIME}"
 readonly LATEST_LINK="${BACKUP_DIR}/latest"
 
