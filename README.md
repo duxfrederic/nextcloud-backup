@@ -13,7 +13,7 @@ The following is required of my backup procedure:
 
 These are achieved using the following tools:
 
-- `rsync` with hard links,
+- `rsync` with [hard links](https://linuxconfig.org/how-to-create-incremental-backups-using-rsync-on-linux),
 - `SSH` and `SSHFS` between the different servers,
 - a `LUKS` encrypted file container stored on the off-site server.
 
