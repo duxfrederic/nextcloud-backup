@@ -20,29 +20,6 @@ else
 	rm $SIGNAL_FILE
 fi
 
-# distant server info (here relying on .ssh/config)
-distanthost="ryzen"
-# distant directory
-distantdir="/run/media/fred/fred_distant"
-
-# private ssh key authentificating us 
-idfile="/home/fred/.ssh/id_rsa"
-
-# where the backup is stored. We will copy from there
-localbackupdirectory="/media/fred/sandisk" 
-# where the distant directory should be mounted locally
-localmount="/mnt/RemoteEncrypted"
-
-# name of the encrypted LUKFS image 
-# (must be at the root of the distant directory)
-imgfile="fred_distant_backup.img"
-# where the encrypted image should be locally mounted
-# (must as well be at the root of the distant directory)
-localencrypted="Private"
-# name of the local mapper 
-localencryptedname="fredNextcloudBackup"
-# key file that decrypts the image
-keyfile="/home/fred/.nextcloudbackup/nextcloudbackup_bycedric.keyfile"
 
 mkdir -p $localmount
 destdirectory="$localmount/$localencrypted"
