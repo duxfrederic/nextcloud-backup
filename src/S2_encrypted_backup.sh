@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-
+set -e
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
@@ -30,7 +30,6 @@ sshfs -o allow_other,default_permissions,IdentityFile=$idfile $distanthost:$dist
 /sbin/cryptsetup luksOpen $localmount/$imgfile $localencryptedname --key-file $keyfile
 # and mount it locally
 mount /dev/mapper/$localencryptedname $destdirectory
-
 mkdir -p $destdirectory/nextcloud_backup
 mkdir -p $destdirectory/nextcloud_varwwwhtml_backup
 mkdir -p $destdirectory/nextcloud_database_backup
