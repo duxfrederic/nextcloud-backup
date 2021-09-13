@@ -43,6 +43,11 @@ $SCRIPT_DIR/S2_backup_single_dir.bash $(readlink $localbackupdirectory/nextcloud
 echo "Done copying the html"
 cp $localbackupdirectory/nextcloud_database_backup/$(ls -A $localbackupdirectory/nextcloud_database_backup | tail -n1) $destdirectory/nextcloud_database_backup/.
 echo "Done copying the database dump"
+
+echo '#######################  is there space left on the device? #################'
+df -h $destdirectory
+echo '#############################################################################'
+
 echo 
 echo "waiting for a few seconds before unmounting"
 sleep 5
